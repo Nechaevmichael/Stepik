@@ -11,8 +11,7 @@
 # Разрешение экрана: 1920 x 1080.
 # Общее количество пикселей = 2073600.
 
-
-# width, heigth = map(int, input().split())
+# width, heigth = map(int, input()split())
 width = int(input('Введите ширину экрана: '))
 heigth = int(input('Введите высоту экрана: '))
 print(f"""Разрешение экрана: {width} x {heigth}.
