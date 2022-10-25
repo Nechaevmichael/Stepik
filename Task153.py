@@ -11,11 +11,19 @@
 # Телепузик
 # Sample Output 1:
 # 21.08.90
+# result = ''
+# while True:
+#     password = input()
+#     if len(password) >= 5 and len(password) <= 9:
+#         result = password
+#     else:
+#         break
+# print(result)
 result = ''
-while True:
-    password = input()
-    if len(password) >= 5 and len(password) <= 9:
-        result = password
-    else:
+text = input()
+while len(text) >= 5 and len(text) <= 9:
+    result = text
+    text = input()
+    if len(text) < 5 and len(text) > 9:
         break
 print(result)
