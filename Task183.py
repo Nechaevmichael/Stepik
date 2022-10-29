@@ -31,3 +31,4 @@ else:
         if min > L[i]:
             min = L[i]
     print(min)
+    
