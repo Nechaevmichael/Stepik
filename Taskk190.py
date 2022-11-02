@@ -12,7 +12,7 @@
 
 # n = int(input())
 
-numbers = [8, 9, 8, 7, 2]
+numbers = list(map(int, input().split()))
 
 count = [0] * 201
 
