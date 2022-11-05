@@ -16,3 +16,13 @@
 # 1 5 8 3 7
 # 2 1 7 8 0
 
+a = []
+N = int(input())
+
+for i in range(N):
+    a.append(list(map(int, input().split())))
+
+for j in range(N):
+    for i in range(N):
+        print(a[i][j], end=' ')
+    print()
