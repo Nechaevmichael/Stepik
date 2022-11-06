@@ -61,16 +61,4 @@ while column != 2:
         column += 1
         count_column += 1
 
-print(count_string + count_column) 
-
-
-# if string == 0:
-#     print(2)
-# elif string == 1:
-#     print(1)
-# elif string == 2:
-#     print(0)
-# elif string == 3:
-#     print(1)
-# elif string == 4:
-#     print(2)
+print(count_string + count_column)
