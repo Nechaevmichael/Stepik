@@ -34,8 +34,3 @@ for i in range(len(score)):
         max_score = score[i]
 
 print(score.count(max_score))
-
-
-
-
-
