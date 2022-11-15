@@ -15,20 +15,6 @@ a = []
 count = 0
 n, m = map(int, input().split())
 
-# for i in range(n):
-#     tmp = []
-#     if i % 2 == 0:
-#         for j in range(m):
-#             tmp.append(count)
-#             count += 1
-#         a.append(tmp)
-#     else:
-#         for j in range(m):
-#             tmp.append(count)
-#             count += 1
-#         a.append(tmp[::-1])
-# for i in a:
-#     print(i)
 for i in range(n):
     a.append([0] * m)
 
@@ -45,3 +31,19 @@ for i in range(n):
 
 for i in a:
     print(*i)
+
+
+# for i in range(n):
+#     tmp = []
+#     if i % 2 == 0:
+#         for j in range(m):
+#             tmp.append(count)
+#             count += 1
+#         a.append(tmp)
+#     else:
+#         for j in range(m):
+#             tmp.append(count)
+#             count += 1
+#         a.append(tmp[::-1])
+# for i in a:
+#     print(i)
