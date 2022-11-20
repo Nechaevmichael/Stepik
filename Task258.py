@@ -21,3 +21,10 @@ n = int(input())
 
 a = [ascii_uppercase[i] for i in range(n)]
 print(a)
+
+# Давайте усовершенствуем предыдущую задачу так, чтобы получался следующий список букв:
+
+# ['A', 'BB', 'CCC', 'DDDD', 'EEEEE', 'FFFFFF', ...]
+
+b = [ascii_uppercase[i] * (i + 1) for i in range(n)]
+print(b)
