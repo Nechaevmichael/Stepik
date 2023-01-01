@@ -12,14 +12,13 @@
 # Ваша задача дописать только тело функции replace
 
 def replace(text: str, old: str, new: str = ''):
-    if new == '':
-        for i in text:
-            text = text.replace(old, '')
-        return text
-    else:
-        for i in text:
-            text = text.replace(old, new)
-        return text
+    for i in text:
+        text = text.replace(old, new)
+    return text
+    # else:
+    #     for i in text:
+    #         text = text.replace(old, new)
+    #     return text
     
 print(replace('nobody; i myself farewell analysis', 'l', 'z'))
         
