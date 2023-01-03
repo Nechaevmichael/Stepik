@@ -11,7 +11,7 @@
 numbers_Fib = [0, 1]
 def fib():
     'Функция создает заданный перечень чисел Фиббоначи'
-    global numbers_Fib
+    # global numbers_Fib
     if len(numbers_Fib) <= 30:
         numbers_Fib.append(numbers_Fib[-1] + numbers_Fib[-2])
         return fib()
