@@ -31,3 +31,29 @@ for i in range(count):
 actors = sorted(actors.items(), key= lambda para: para[1], reverse=True)
 
 print(f'{actors[0][0]}, {actors[0][1]} \n{actors[-1][0]}, {actors[-1][1]}')
+
+n = int(input())
+
+actors = {}
+
+for i in range(n):
+    actor = input()
+    if actor in actors:
+        actors[actor] += 1
+    else:
+        actors[actor] = 1
+
+actor_max = ''
+max = 0
+actor_min = ''
+min = 1000
+for key, value in actors.items():
+    if value > max:
+        max = value
+        actor_max = key
+    if value < min:
+        min = value
+        actor_min = key
+
+print(str(actor_max) + ', ' + str(max)) 
+print(str(actor_min) + ', ' + str(min))
