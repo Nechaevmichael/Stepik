@@ -47,7 +47,7 @@ d = {}
 for i in range(n):
     temp = input().split()
     if temp[1] not in d:
-        d[temp[1]] == temp[0]
+        d[temp[1]] = [temp[0]]
     elif temp[1] in d:
         d[temp[1]].append(temp[0])
 n_1 = int(input())
