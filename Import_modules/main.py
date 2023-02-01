@@ -37,7 +37,7 @@
 # import math_func
 # print(__name__)
 
-import module_1
+import Import_modules.module_1 as module_1
 
 if __name__ == '__main__':
     print(__name__)
