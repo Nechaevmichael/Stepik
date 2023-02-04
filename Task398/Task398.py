@@ -6,4 +6,4 @@ def file_read(file_name):
     file_1 = open(file_name, 'r', encoding='utf-8')
     print(file_1.read())
 
-file_read(file_2)
+# file_read(file_2)
