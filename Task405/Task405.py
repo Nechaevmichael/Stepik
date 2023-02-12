@@ -30,5 +30,4 @@ def count_words(file_name: str) -> dict:
                 words[j.upper()] += 1
     return words
 
-
-print(count_words('lorem.txt'))
+print(count_words(r'Task405\lorem_1.txt'))
