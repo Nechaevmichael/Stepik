@@ -1,5 +1,6 @@
 import json
 from pprint import pprint
+from random import randint
 str_json = """
 {
     "response": {
@@ -26,6 +27,23 @@ data = json.loads(str_json)
 # pprint(data['response']['count'])
 # pprint(data['response']['items'])
 
-for item in data['response']['items']:
-    print(item['first_name'], item['last_name'])
+# ==============================
+# Обойдем циклом строку json
+# for item in data['response']['items']:
+#     print(item['first_name'], item['last_name'])
 
+# ==============================
+# Удалим элемент id и добавим likes
+for item in data['response']['items']:
+    del item['id']
+    item['likes'] = randint(0, 1000)
+
+# pprint(data['response']['items'])
+
+# ===============================
+# Сконвертируем обратно словарь в строку json
+new_json = json.dumps(data)
+pprint(new_json)
+print('Ниже json с параметром indent'.center(40, '-'))
+json_indent = json.dumps(data, indent=2)
+print(json_indent)
